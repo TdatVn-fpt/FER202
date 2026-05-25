@@ -99,7 +99,7 @@ const employees =[
     
 ]
 // In ra list of employee
-const tableData = employees.map(employee => ({
+const tableData = employees?.map(employee => ({
     Id: employee.id,
     Name: employee.name,
     Gender: employee.gender ? "Male" : "Female",

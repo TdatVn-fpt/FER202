@@ -89,13 +89,13 @@ const { students, course, classes } = data;
 // viết hàm xử lý trả về lấy titile của course theo id
 function getTitileById(id) {
     const courseResult = course?.find(c => c.id == id)
-    if(courseResult === undefined)
+    if(courseResult  == undefined)
         return "No Course"
     return courseResult.title
 }
 function getClassNameById(id) {
     const resultClass = classes?.find(c => c.id == id)
-     if(resultClass === undefined)
+     if(resultClass == undefined)
         return "No Class"
     return resultClass.name
 }

@@ -108,6 +108,7 @@ findAndPrintEmployeeById(companyData, "e99");
 
 
 
+
 // Chạy thử hàm: Chuyển nhân viên 'e1' (Trần Trần B từ Tổ Web) sang 'd1-2' (Tổ Mobile) và tăng lương lên 2500
 const isSuccess = updateEmployeeSalaryAndMove(companyData, "e1", 2500, "d1-2");
 

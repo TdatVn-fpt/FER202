@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #263238;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.section-title {
+  margin: 0;
+  color: #4b5963;
+  font-size: 1.35rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  margin: 0 0 14px;
+  color: #87929a;
+  font-size: 0.8rem;
+}
+
+.exercise-anchor {
+  scroll-margin-top: 70px;
+}
+
+.navbar-brand {
+  color: #6f7b84;
+  font-size: 0.95rem;
+}
+
+.navbar .nav-link {
+  color: #7c8790;
+  font-size: 0.85rem;
+}
+
+.hero-slide {
+  height: 530px;
+  background: #cfcfcf;
+}
+
+.hero-placeholder {
+  color: #969696;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 300;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 28px;
+  height: 3px;
+}
+
+.product-section {
+  max-width: 960px;
+  padding: 38px 16px 54px;
+}
+
+.product-card {
+  position: relative;
+  border: 1px solid #e2e2e2;
+  border-radius: 0;
+  background: #fff;
+  font-size: 0.82rem;
+}
+
+.product-thumb {
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  background: #cfcfcf;
+  color: #858585;
+  font-size: 1.1rem;
+}
+
+.sale-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 58px solid #ff9e16;
+  border-left: 58px solid transparent;
+}
+
+.sale-ribbon span {
+  position: absolute;
+  top: -48px;
+  right: 1px;
+  color: #fff;
+  font-size: 0.85rem;
+  transform: rotate(45deg);
+}
+
+.old-price {
+  color: #777;
+  font-size: 0.72rem;
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: #f39a22;
+  font-size: 0.72rem;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cart-btn {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: #1f5d88;
+  color: #fff;
+}
+
+.detail-btn {
+  min-height: 32px;
+  border: 1px solid #cbd5dd;
+  background: #fff;
+  color: #7a8790;
+  font-size: 0.72rem;
+}
+
+.cards-demo {
+  padding: 0 0 36px;
+}
+
+.cards-demo h1 {
+  margin: 0 0 8px;
+  color: #1d252c;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.color-card {
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+.color-card img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.color-card p {
+  margin: 8px 0 0;
+  color: #000;
+  font-size: 1.12rem;
+}
+
+.ticket-demo {
+  padding-bottom: 42px;
+}
+
+.ticket-panel {
+  border: 1px solid #111;
+  padding: 18px 18px 30px;
+}
+
+.ticket-alert {
+  height: 30px;
+  border-radius: 4px;
+  background: #fff3cd;
+  color: #c9ad61;
+  text-align: right;
+  font-size: 2rem;
+  line-height: 22px;
+}
+
+.ticket-panel h1 {
+  margin: 26px 0 12px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+}
+
+.ticket-panel label {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.ticket-panel .form-text {
+  color: #687986;
+}
+
+.ticket-grid {
+  border: 1px solid #111;
+  min-height: 648px;
+}
+
+.grid-band {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid #111;
+}
+
+.grid-band-top {
+  height: 50px;
+  background: #f9e1c6;
+}
+
+.grid-band-middle {
+  height: 59px;
+  background: #d8e6f7;
+}
+
+.grid-band-large {
+  min-height: 537px;
+  background: #f4caca;
+}
+
+.badge-demo {
+  display: inline-grid;
+  place-items: center;
+  min-width: 40px;
+  height: 32px;
+  border-radius: 6px;
+  background: #ff0900;
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .hero-slide {
+    height: 260px;
+  }
+
+  .product-section {
+    padding-top: 26px;
+  }
+
+  .price-row {
+    justify-content: flex-start;
+  }
+
+  .ticket-grid {
+    min-height: 360px;
+  }
+
+  .grid-band-large {
+    min-height: 250px;
+  }
+}
